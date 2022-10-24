@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +7,25 @@
     <title>instagram</title>
     
 </head>
-<style>
-
-table { 
-    font-family: arial;
-    border:solid gray 1px;
-}
-.tabladiv { border: none;
-
-}
-td { border: none;
-
-}
-</style>
 <body>
     
-<div class=".tabladiv">
 <table align="center">
     <tr>
         <td><img src="imagenes/telefono.png" alt="imagen de telefono" width="300"></td>
-        </tr>
-</table>
-</div>
+        <td> <img src="imagenes/logoletras.png" alt="logo de las letras"><br>
+            <form action="action_page.php">
+                <label for="usuario"></label><br>
+                <input placeholder="telefono, usuario, correo electronico" id="usuario" name="usuario"><br></form>
+                <form action="action_page.php">       
+                    <label for="contraseña"></label> <br>
+                    <input placeholder="Contraseña" id="contraseña" name="contraseña"><br></form>
+                    <button><img src="imagenes/buttonenviar.png" alt="Enviar" width="300" height="20"><br></button>
+                    
 
-<table align="right" border="solid 1px" width="300">
-<tr>
-    <td> <img src="imagenes/logoletras.png" alt="logo de las letras"></td></tr>
-<tr>
-    <td align="left">
-<form action="action_page.php">
-    <label for="usuario"></label><br>
-    <input placeholder="telefono, usuario, correo electronico" id="usuario" name="usuario"><br></form></td></tr>
-<tr>
-    <td align="left">
-    <form action="action_page.php">       
-    <label for="contraseña"></label> <br>
-    <input placeholder="Contraseña" id="contraseña" name="contraseña"></form></td></tr>
-<tr>
-<td><button><img src="imagenes/buttonenviar.png" alt="Enviar" width="100"></button></td></tr>
+        </td>
+        
+   
+
 </table>
 </body>
 </html>
