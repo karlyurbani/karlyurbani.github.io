@@ -9,49 +9,42 @@
 </head>
 <style>
 
+table { 
+    font-family: arial;
+    border:solid gray 1px;
+}
+.tabladiv { border: none;
+
+}
+td { border: none;
+
+}
 </style>
 <body>
-
-    <table>
-    <tr>
     
-        <td>
-            <img src="imagenes/telefono.png" alt="imagen de telefono" width="300"></td>
+<div class=".tabladiv">
+<table align="center">
+    <tr>
+        <td><img src="imagenes/telefono.png" alt="imagen de telefono" width="300"></td>
         </tr>
-    </table>
-        
-        <table align="rigth" border="solid grey 1xp">
+</table>
+</div>
 
-    <tr>
-        <td align="right">
-            <img src="imagenes/logoletras.png" alt="logo de las letras">
-        </td>
-   </tr>
-        <tr>
-<td align="right">
-        <form action="action_page.php">
-                <label for="usuario">Usuario:</label><br>
-                <input type="text" id="usuario" name="usuario"><br>
-        </form>
-        </td>
-    </tr>
-    <tr>
-        <td align="right">
-                <form action="action_page.php">       
-                <label for="contraseña">Contraseña:</label> <br>
-                <input type="text" id="contraseña" name="contraseña">
-                </form>
-        </td>
-            </tr>
-            <tr>
-                <td>
-<button>
-     <img src="imagenes/buttonenviar.png" alt="Enviar" width="100">
-</button>
-                </td>
-            </tr>
-
-    
+<table align="right" border="solid 1px" width="300">
+<tr>
+    <td> <img src="imagenes/logoletras.png" alt="logo de las letras"></td></tr>
+<tr>
+    <td align="left">
+<form action="action_page.php">
+    <label for="usuario"></label><br>
+    <input placeholder="telefono, usuario, correo electronico" id="usuario" name="usuario"><br></form></td></tr>
+<tr>
+    <td align="left">
+    <form action="action_page.php">       
+    <label for="contraseña"></label> <br>
+    <input placeholder="Contraseña" id="contraseña" name="contraseña"></form></td></tr>
+<tr>
+<td><button><img src="imagenes/buttonenviar.png" alt="Enviar" width="100"></button></td></tr>
 </table>
 </body>
 </html>
