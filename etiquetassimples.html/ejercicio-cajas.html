@@ -7,50 +7,69 @@
     <title>Cajas</title>
     <style>
 
-#caja0{
-        position: fixed;
+/*div.caja0{
+        position: sticky;
         top: 0px;
         margin: 0 auto;
-        height: 100px;
-        width: 100px;
+        height: 4%;
+        width: 100%;
         display: flex;
         justify-content: center;
+
          
+         }*/
+         img{position: fixed;
+            top: 0px;
+            width: 100%;
+
          }
-#caja1{
-    width: 400px;
-    height: 800px;
-    border: 1px;
+
+div.contenedor {
+        
+        margin-top:100px;
+        height: 4%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 25%;
+    
+
+         }
+.caja1{
+    width: 40%;
+    height: 150px;
+    border: 5px black solid;
     background-color: rgb(247, 220, 111);
-    margin-top: 0px;
-    position: relative;
     top: 100px;
+    overflow: auto;
+    
     
    
 }
 
-#caja2{
-    width: 400px;
-    height: 800px;
-    border: 1px;
+.caja2{
+    width: 40%;
+    height: 150px;
+    border: 5px black solid;
     background-color: rgb(248, 196, 113);
-   margin-left: 400px;
-    position: relative;
-    top: -700px;
+    top: 70px;
+    margin-left: 10%;
+    overflow: auto;
     
    
 }
 
-#caja3 {
-    width: 400px;
-    height: 800px;
-    border: 1px;
+.caja3 {
+    width: 40%;
+    height: 150px;
+    border: 5px black solid;
     background-color: rgb(36, 113, 163);
-    margin-left: 800px;
-    position: relative;
-    top: -1500px;
-   
-       
+    top: 140px;
+    margin-left: 10%;
+    overflow: auto;
 }
 
     </style>
@@ -58,11 +77,12 @@
 
 <body>
     
-    <div id="caja0"><img src="imagenes/webdelascajas.png" alt="titulo"></div>
-    <div id="caja1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis risus mi, sit amet bibendum mauris accumsan eu. Aliquam fermentum maximus leo sit amet vestibulum. Suspendisse quis nisl a risus luctus tristique. Cras vitae arcu eu magna interdum eleifend. Donec diam massa, placerat ut mauris eu, congue pulvinar elit. Vestibulum scelerisque dui et aliquam consectetur. Phasellus eget ligula sed risus dapibus suscipit. Nullam eu libero euismod, cursus justo sit amet, lobortis erat. Phasellus lacinia, mauris ac dignissim aliquam, felis justo volutpat neque, eu dignissim dui augue id felis. Vivamus a vestibulum nunc.Donec magna augue, eleifend quis sodales gravida, imperdiet porta turpis. Donec eu gravida nulla. In efficitur convallis dolor, a mollis nunc aliquet quis. Sed ullamcorper sit amet enim consectetur dapibus. Suspendisse ultricies elit in dolor imperdiet venenatis. Vivamus nec enim eu magna vestibulum varius. In hac habitasse platea dictumst.</div>
-    <div id="caja2"> Vivamus lacinia tincidunt sapien, at consectetur quam posuere nec. Nulla sit amet egestas metus, non fringilla est. In hac habitasse platea dictumst. In porta eros at arcu porta fermentum. Donec suscipit sapien aliquet lobortis ultricies. Suspendisse potenti. Praesent maximus est arcu, id dignissim enim tempus sit amet. Nunc bibendum nulla non faucibus blandit. Praesent porttitor, felis id convallis viverra, ipsum risus commodo neque, dictum sodales sem lacus eu ipsum. Nulla feugiat dolor ut felis scelerisque, accumsan commodo elit vehicula. Donec mattis ornare velit, eget condimentum sem tempus ac. Integer nec semper justo. Pellentesque ut porttitor erat. Ut facilisis nibh augue, eget sodales felis elementum vehicula. Nam auctor nibh risus, id dignissim nisl condimentum ac. Fusce imperdiet hendrerit mi, nec dignissim erat scelerisque ut. Praesent rhoncus neque et nulla iaculis ultricies. Ut egestas libero quis eleifend sodales. Vestibulum malesuada, ex sed suscipit vestibulum, urna nunc consequat elit, tempor semper lectus ligula ac turpis. Fusce at suscipit urna, quis eleifend quam. Donec tincidunt at ipsum et dictum. Quisque tempor lectus sapien, non ultrices magna tristique quis.</div>
-    <div id="caja3"> Vivamus lacinia tincidunt sapien, at consectetur quam posuere nec. Nulla sit amet egestas metus, non fringilla est. In hac habitasse platea dictumst. In porta eros at arcu porta fermentum. Donec suscipit sapien aliquet lobortis ultricies. Suspendisse potenti. Praesent maximus est arcu, id dignissim enim tempus sit amet. Nunc bibendum nulla non faucibus blandit. Praesent porttitor, felis id convallis viverra, ipsum risus commodo neque, dictum sodales sem lacus eu ipsum. Nulla feugiat dolor ut felis scelerisque, accumsan commodo elit vehicula. Donec mattis ornare velit, eget condimentum sem tempus ac. Integer nec semper justo. Pellentesque ut porttitor erat. Ut facilisis nibh augue, eget sodales felis elementum vehicula. Praesent fermentum vestibulum nisl maximus porttitor. Vestibulum non sem sed massa pretium porta. Fusce sit amet sem nec nunc convallis aliquam et sit amet dolor. Sed lobortis aliquam magna vel dignissim. Cras ut eros felis. Nulla sagittis, ligula nec semper elementum, risus felis blandit sem, eu luctus arcu ligula ut mauris. Nulla id metus mollis, rutrum lectus at, vulputate metus. Proin luctus vel augue a ultrices. Aliquam fermentum magna vel justo scelerisque accumsan. Quisque pharetra ante nibh, et facilisis dolor rutrum quis. Curabitur dictum turpis eu dui facilisis finibus. Nam viverra pellentesque mi. Donec sed dui semper, commodo magna sit amet, finibus nulla. Praesent vel diam in lorem tempus lacinia et at ipsum.</div>
-   
+    <div class="caja0"><img src="imagenes/webdelascajas.png" alt="titulo"></div>
+<div class="contenedor">
+    <div class="caja1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis risus mi, sit amet bibendum mauris accumsan eu. Aliquam fermentum maximus leo sit amet vestibulum. Suspendisse quis nisl a risus luctus tristique. Cras vitae arcu eu magna interdum eleifend. Donec diam massa, placerat ut mauris eu, congue pulvinar elit. Vestibulum scelerisque dui et aliquam consectetur. Phasellus eget ligula sed risus dapibus suscipit. Nullam eu libero euismod, cursus justo sit amet, lobortis erat. Phasellus lacinia, mauris ac dignissim aliquam, felis justo volutpat neque, eu dignissim dui augue id felis. Vivamus a vestibulum nunc.Donec magna augue, eleifend quis sodales gravida, imperdiet porta turpis. Donec eu gravida nulla. In efficitur convallis dolor, a mollis nunc aliquet quis. Sed ullamcorper sit amet enim consectetur dapibus. Suspendisse ultricies elit in dolor imperdiet venenatis. Vivamus nec enim eu magna vestibulum varius. In hac habitasse platea dictumst.</div>
+    <div class="caja2"> Vivamus lacinia tincidunt sapien, at consectetur quam posuere nec. Nulla sit amet egestas metus, non fringilla est. In hac habitasse platea dictumst. In porta eros at arcu porta fermentum. Donec suscipit sapien aliquet lobortis ultricies. Suspendisse potenti. Praesent maximus est arcu, id dignissim enim tempus sit amet. Nunc bibendum nulla non faucibus blandit. Praesent porttitor, felis id convallis viverra, ipsum risus commodo neque, dictum sodales sem lacus eu ipsum. Nulla feugiat dolor ut felis scelerisque, accumsan commodo elit vehicula. Donec mattis ornare velit, eget condimentum sem tempus ac. Integer nec semper justo. Pellentesque ut porttitor erat. Ut facilisis nibh augue, eget sodales felis elementum vehicula. Nam auctor nibh risus, id dignissim nisl condimentum ac. Fusce imperdiet hendrerit mi, nec dignissim erat scelerisque ut. Praesent rhoncus neque et nulla iaculis ultricies. Ut egestas libero quis eleifend sodales. Vestibulum malesuada, ex sed suscipit vestibulum, urna nunc consequat elit, tempor semper lectus ligula ac turpis. Fusce at suscipit urna, quis eleifend quam. Donec tincidunt at ipsum et dictum. Quisque tempor lectus sapien, non ultrices magna tristique quis.</div>
+    <div class="caja3"> Vivamus lacinia tincidunt sapien, at consectetur quam posuere nec. Nulla sit amet egestas metus, non fringilla est. In hac habitasse platea dictumst. In porta eros at arcu porta fermentum. Donec suscipit sapien aliquet lobortis ultricies. Suspendisse potenti. Praesent maximus est arcu, id dignissim enim tempus sit amet. Nunc bibendum nulla non faucibus blandit. Praesent porttitor, felis id convallis viverra, ipsum risus commodo neque, dictum sodales sem lacus eu ipsum. Nulla feugiat dolor ut felis scelerisque, accumsan commodo elit vehicula. Donec mattis ornare velit, eget condimentum sem tempus ac. Integer nec semper justo. Pellentesque ut porttitor erat. Ut facilisis nibh augue, eget sodales felis elementum vehicula. Praesent fermentum vestibulum nisl maximus porttitor. Vestibulum non sem sed massa pretium porta. Fusce sit amet sem nec nunc convallis aliquam et sit amet dolor. Sed lobortis aliquam magna vel dignissim. Cras ut eros felis. Nulla sagittis, ligula nec semper elementum, risus felis blandit sem, eu luctus arcu ligula ut mauris. Nulla id metus mollis, rutrum lectus at, vulputate metus. Proin luctus vel augue a ultrices. Aliquam fermentum magna vel justo scelerisque accumsan. Quisque pharetra ante nibh, et facilisis dolor rutrum quis. Curabitur dictum turpis eu dui facilisis finibus. Nam viverra pellentesque mi. Donec sed dui semper, commodo magna sit amet, finibus nulla. Praesent vel diam in lorem tempus lacinia et at ipsum.</div>
+</div>
     
 
 

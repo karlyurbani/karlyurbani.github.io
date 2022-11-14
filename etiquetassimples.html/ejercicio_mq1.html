@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ1</title>
+    <style>
+div{
+    width: 100%;
+    text-align: center;
+    color: black;
+    display: none;
+}
+    body{
+            background-color: yellow;
+}
+    @media screen and (min-width: 0px) and (max-width: 379px) {
+    body {background-color: blueviolet;}
+     #movil {display: block;}
+} 
+@media screen and (min-width: 380px) and (max-width: 579px) {
+    body {background-color: aqua;}
+    #tablet {display: block;}
+    
+}
+@media screen and (min-width: 580px;) and (max-width: 679px){ 
+    body {background-color: tomato;}   
+    #portatil {display: block;}
+}
+@media screen and (min-width: 680px;) and (max-width: 779px) {
+    body {background-color: rgb(97, 97, 44);}
+    #escritorio {display: block;}
+}
+@media screen and (min-width: 780px;) and (max-width: 979px) {
+    body {background-color: brown;}   
+    #imprimir {display: block;}
+}
+
+  </style>
+
+</head>
+<body>
+    <div id="movil">Hola, soy un movil</div>
+    <div id="tablet">Buenos días, soy un tablet</div>
+    <div id="portatil">Buenas tardes, soy un portatil</div>
+    <div id="ecritorio">Buenas noches, estas en el escritorio</div>
+    <div id="imprimir">¿Que quieres impimir?</div>
+
+    
+</body>
+</html>
