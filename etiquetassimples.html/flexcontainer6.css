@@ -1,0 +1,41 @@
+#caja1 {
+    background-color: rgb(6, 172, 122);
+font-size: xx-small;
+}
+#caja2 {
+    background-color: rgb(26, 135, 179);
+    font-size: x-small;
+ }
+#caja3 {
+    background-color: rgb(114, 32, 114);
+    font-size: small;
+ }
+#caja4 {
+    background-color: rgb(14, 30, 76);
+font-size: smaller; 
+}
+#caja5 {
+    background-color: rgb(237, 237, 41);
+font-size: larger; 
+}
+#caja6 {
+    background-color: hsl(32, 93%, 43%);
+font-size: medium; 
+}
+
+#caja7 {
+    background-color: orangered;
+font-size: large;
+}
+#caja8 {
+    background-color: rgb(149, 145, 145);
+font-size: small; 
+}
+#caja9 {
+    background-color: rgb(110, 228, 63);
+font-size: x-small; 
+}
+#caja10 {
+    background-color: rgb(10, 113, 89);
+font-size: xx-smalls;
+ }
