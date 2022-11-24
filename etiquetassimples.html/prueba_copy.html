@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de vistas al mar</title>
+    <style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Verdana;
+      }
+      
+      .encabezado {
+        text-align: center;
+        padding: 32px;
+      }
+      
+      .fila {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 3px;
+      }
+      
+        .columna {
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 0 3px;
+      }
+      
+      .columna img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      
+      
+      @media (max-width: 800px) {
+        .columna {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      
+      @media (max-width: 600px) {
+        .columna {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+</style>
+</head>
+
+<body>
+
+<div class="encabezado">
+    <h1>Hermosas vistas de playas</h1>
+    <p>Da un paseo por las playas y acantilados mas bonitos sin salir de tu casa</p>
+  </div>
+  
+  
+  <div class="fila"> 
+    <div class="columna">
+      <img src= "imagenes/img1.jpeg" style="width:100%">
+      <img src="imagenes/img2.jpeg" style="width:100%">
+      <img src="imagenes/img3.jpeg" style="width:100%">
+      <img src="imagenes/img4.jpeg" style="width:100%">
+      <img src="imagenes/img5.jpeg" style="width:100%">
+    </div>
+    
+    <div class="columna">
+        <img src="imagenes/img6.jpeg" style="width:100%">
+        <img src="imagenes/img7.jpeg" style="width:100%">
+        <img src="imagenes/img8.jpeg" style="width:100%">
+        <img src="imagenes/img9.jpeg" style="width:100%">
+        <img src="imagenes/img10.jpeg" style="width:100%">
+    </div> 
+     
+    <div class="columna">
+        <img src="imagenes/img11.jpeg" style="width:100%">
+        <img src="imagenes/img12.jpeg" style="width:100%">
+        <img src="imagenes/img13.jpeg" style="width:100%">
+        <img src="imagenes/img14.jpeg" style="width:100%">
+        <img src="imagenes/img15.jpeg" style="width:100%">
+    </div>
+
+  </div>
+    
+</body>
+</html>
