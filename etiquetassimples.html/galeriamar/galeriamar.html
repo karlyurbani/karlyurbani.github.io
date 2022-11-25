@@ -5,31 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de vistas al mar</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
     <style>
     * {
         box-sizing: border-box;
+        border-radius: 5px;
       }
       
       body {
         margin: 0;
         font-family: Verdana;
+        font-size: large;
       }
       
       .encabezado {
+        background-image: linear-gradient( rgb(85, 180, 235), rgb(204, 83, 83), rgb(212, 212, 119), rgb(197, 161, 93));
+        background-repeat: no-repeat;
+        background-size: 100%;
         text-align: center;
+        font-family: "Lobster";
         padding: 32px;
       }
       
       .fila {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 3px;
+        padding: 0 4px;
       }
       
-        .columna {
-        flex: 33.33%;
-        max-width: 33.33%;
-        padding: 0 3px;
+      .columna {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
       }
       
       .columna img {
@@ -38,20 +45,40 @@
       }
       
       
-      @media (max-width: 800px) {
+      @media (max-width: 1190px) {
+        .columna {
+          flex: 25%;
+          max-width: 25%;
+        }
+      }
+      
+      
+      @media (max-width: 905px) {
+        .columna {
+          flex: 25%;
+          max-width: 25%;
+        }
+      }
+        @media (max-width: 705px) {
         .columna {
           flex: 50%;
           max-width: 50%;
         }
       }
-      
-      
-      @media (max-width: 600px) {
+
+        @media (max-width: 505px) {
         .columna {
-          flex: 100%;
-          max-width: 100%;
+          flex: 25%;
+          max-width: 25%;
         }
       }
+      @media (max-width: 405px) {
+        .columna {
+          flex: 25%;
+          max-width: 25%;
+        }
+      }
+
 </style>
 </head>
 
@@ -65,7 +92,7 @@
   
   <div class="fila"> 
     <div class="columna">
-      <img src= "imagenes/img1.jpeg" style="width:100%">
+      <img src="imagenes/img1.jpeg" style="width:100%">
       <img src="imagenes/img2.jpeg" style="width:100%">
       <img src="imagenes/img3.jpeg" style="width:100%">
       <img src="imagenes/img4.jpeg" style="width:100%">
@@ -86,7 +113,18 @@
         <img src="imagenes/img13.jpeg" style="width:100%">
         <img src="imagenes/img14.jpeg" style="width:100%">
         <img src="imagenes/img15.jpeg" style="width:100%">
+        <img src="imagenes/img4.jpeg" style="width:100%">
     </div>
+
+    <div class="columna">
+      <img src="imagenes/img1.jpeg" style="width:100%">
+      <img src="imagenes/img2.jpeg" style="width:100%">
+      <img src="imagenes/img3.jpeg" style="width:100%">
+      <img src="imagenes/img4.jpeg" style="width:100%">
+      <img src="imagenes/img5.jpeg" style="width:100%">
+    </div>
+  
+
 
   </div>
     
