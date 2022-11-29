@@ -1,0 +1,37 @@
+.caja1 {grid-area: uno;}
+.caja2 {grid-area: dos;}
+.caja3 {grid-area: tres;}
+.caja4 {grid-area: cuatro;}
+.caja5 {grid-area: cinco;}
+
+
+.contenedor {
+    
+    display: grid;
+    grid-template-rows: 10% 20% auto 10%;
+    grid-template-areas: 
+    'uno uno '
+    'dos dos '
+    'tres cuatro'
+    'cinco cinco';
+    height: 600px;
+    background-color: antiquewhite;
+    border: 4px dashed black;
+    padding: 10px;
+
+}
+
+.contenedor > div {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 30px;
+    
+
+}
+
+.caja1 {background-color: blue;}
+.caja2 {background-color: green;}
+.caja3 {background-color: yellow;}
+.caja4 {background-color: red;}
+.caja5 {background-color: orange;}
