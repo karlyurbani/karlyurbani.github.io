@@ -1,0 +1,31 @@
+.cabecera{ grid-area: cabecera;}
+.menu { grid-area: menu;}
+.caja1 {grid-area: caja1;}
+.caja2 {grid-area: caja2;}
+.caja3{ grid-area: caja3;}
+
+
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    'cabecera cabecera cabecera'
+    'menu caja1 caja1 caja2 caja2'
+    'menu caja3 caja3 caja3 caja3'
+     ;
+    grid-template-rows: 10% 20% auto 10%;
+     justify-content: stretch;
+    width: 80%;
+    /*height: 84vh;
+    margin: 0 auto;*/
+    padding: 20px;
+    background-color: rgb(43, 104, 84);
+    grid-gap: 10px; 
+   
+}
+.contenedor > {
+    background-color: aqua;
+    text-align: center;
+    padding: auto;
+    font-size: 30px;
+}
+
