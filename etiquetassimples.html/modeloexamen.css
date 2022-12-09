@@ -1,0 +1,44 @@
+.header { grid-area: header; }
+.barra1 { grid-area: inicio; }
+.barra2 { grid-area: acercade; }
+.barra3 { grid-area: blog; }
+.barra4 { grid-area: carreras; }
+.barra5 { grid-area: contactanos; }
+.cuerpo { grid-area: cuerpo; }
+.pie { grid-area: pie; }
+
+body { flex;
+    background-image: url(imagenes/bg.jpg);
+     background-repeat: no-repeat center fixed;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 25% 5% 60% 10%;
+    grid-template-areas: 
+    'header'
+    'incio acercade blog carreras contactanos'
+    'cuerpo'
+    'pie';
+    height: 600%;
+    padding: 20px;
+}
+
+.contenedor > div {
+    background-color: #433803;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.header {
+    
+    width: 100%;
+    background-color: #b28306 ;
+    text-align: center;
+    border-radius: 25%;}
+
+.h2 {font-size: medium;}
+
+p {font-size: small;}
+
