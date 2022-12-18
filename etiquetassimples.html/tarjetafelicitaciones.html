@@ -10,18 +10,13 @@
     <style>
 *{box-sizing: border-box;}
 
-
-
 .grid-container {
     display: grid;
     grid-template-columns: 60% auto;
-
 }
-
 
 .grid-container > div {
     background-color: rgb(174, 59, 59);
-    
 }
 
 .texto {
@@ -35,17 +30,13 @@
     color: black;
     border: 3px solid;
     border-color: red;
-
 }
-
 
 .imagen {
     border: 60px solid transparent;
     border-image: url(https://i.imgur.com/W5PsVYy.jpg) 30%;
     border-image-repeat: repeat;
-    
-    
-  }
+}
 
 img {
   width: 100%;
@@ -57,13 +48,12 @@ color: rgb(180, 47, 47);
 text-decoration: none;
 }
 
+@media (max-width: 598px)
+{
+    .texto, .imagen
+}
 
-
- 
-
-
-
-    </style>
+ </style>
 
 </head>
 
