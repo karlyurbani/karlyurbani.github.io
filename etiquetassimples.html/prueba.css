@@ -1,0 +1,55 @@
+html{
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(imagenes/los_roques.avif) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+}
+
+header{
+    background-color: rgb(101, 38, 38);
+    color: coral;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-radius: 25px;
+}
+article, aside, header {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-bottom: 0.5rem solid;
+}
+
+aside{
+    background-color: grey;
+    border-radius: 30px;
+}
+
+
+a:link {
+color: blue;
+background-color: transparent;
+text-decoration: none;
+}
+a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration:none;
+}
+a:hover {
+    color: yellow;
+    background-color: green;
+    text-decoration: underline;
+}
+ a:active {
+    color: brown;
+    background-color: pink;
+    text-decoration: none;
+ }
