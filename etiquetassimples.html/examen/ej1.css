@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+a{
+    color: ye;
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    background-color: #970043;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+p::first-letter {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4C3803;
+    }
+
+header {
+    background-color: #ffd100;
+    height: 20px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+
+.flex-container {
+display: flex;
+flex-direction: row;
+
+
+}
+
+.flex-container > div {
+width: 100px;
+margin: 10px;
+text-align: center;
+
+}

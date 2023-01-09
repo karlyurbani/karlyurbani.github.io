@@ -1,0 +1,18 @@
+
+
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(52, 49, 49);
+}
+
+.grid.container{
+display: grid;
+grid-template-columns: auto auto auto;
+
+}
+
+.grid.container > div {
+
+    background-color: lightgray;
+    border: 1px;
+}
