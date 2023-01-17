@@ -1,0 +1,23 @@
+table, th, td {
+    border: 2px solid palevioletred;
+    border-top-left-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    padding: 30px;
+  
+}
+
+#dias{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(74, 74, 139);
+}
+
+#enero {
+text-align: center;
+}
+
+.numero{
+    color: rgb(69, 131, 69);
+    font-size: larger;
+}
