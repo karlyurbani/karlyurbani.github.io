@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide show</title>
+</head>
+<body>
+    <h1>Anuncios rotatorios</h1>
+    <a href="" id="enlace" target="blank">
+        <img src="" alt="" id="imagen">
+    </a>
+   
+    <script>
+    
+        var imagen =["banner0.png", "banner1.png", "banner2.png", "banner3.png", "banner4.png", "banner5.png"];
+        var enlace =["https://store.dsautomobiles.es/configurable",
+                     "https://www.elcorteingles.es/supermercado/",
+                     "https://www.elcorteingles.es/daitsu/electrodomesticos/aire-acondicionado/",
+                     "https://www.madridhifi.com",
+                     "https://launidad.movistarplus.es/?dis_c=331187589&dclid=CL-Lt9zx4_YCFdZEHQkdLpkExQ",
+                     "https://www.tikamoon.es" ] ;
+        
+        var i=0;
+
+        function banner() {
+            /*if (i=0)
+            {
+               imagen.length = -1; 
+            }*/
+            i++;
+        document.getElementById('enlace').href=enlace[i];
+        document.getElementById('imagen').src=imagen[i];   
+    setTimeout(banner,3000)    
+    }
+
+        banner();
+        
+
+
+    </script>
+</body>
+</html>

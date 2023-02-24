@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases</title>
+</head>
+
+<style>
+.rectangulo{
+    width: 50%;
+    height: 50px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <script>
+        let frases= ["Frase 1", "Frase 2", "Frase 3", "Frase 4", "Frase 5", 
+        "Frase 6", "Frase 7", "Frase 8", "Frase 9", "Frase 10", ];
+        imprimeFrases();
+
+    function imprimeFrases(){
+    for (var i=frases.length-1;i>=0;i=i-1) {
+    document.write("<div class='rectangulo'>");
+    document.write("<img src='pajarito.png'>");
+    document.write(frases[i]);
+    document.write("<img onclick='alert(\"ha hecho click en la papelera\");' src='papelera.png'>");
+    document.write("</div>");
+    }
+}
+ </script>
+</body>
+</html>
