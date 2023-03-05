@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+<style>
+    .form-control small{
+        color: red;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    .form-control.error small {
+        visibility:visible;
+    }
+
+    .form-control.success{
+        border-color: green;
+    }
+</style>
+
+</head>
+<body> <div>
+    <form id="form" class="form" action="">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" placeholder="Introduce tu nombre"> 
+        <small >error</small>
+    </div>
+    <div>
+        <label for="apellido">Apellido:</label>
+        <input id="apellido" type="text" placeholder="Introduce tu apellido"> 
+        <small>Error</small>
+    </div>
+    <div>
+        <label for="email">Correo electrónico:</label> 
+        <input id="email" type="text" placeholder="Introduce tu email"> 
+        <small>Error</small>
+    </div>
+    <div>
+        <label for="direccion">Dirección:</label> 
+        <input type="text" placeholder="Escribe tu dirección">
+    </div>
+    <div>
+        <label for="ciudad">Ciudad:</label> 
+        <input type="text" placeholder="Ciudad de residencia">
+    </div>
+    <div>
+        <label for="telefono">Teléfono:</label>  
+        <input id="telefono" type="text" placeholder="Introduce tu teléfono"> 
+        <small>Error</small>
+    </div>
+    <div>
+        <label for="dni">DNI:</label>
+        <input id="dni" type="text" placeholder="Introduce tu DNI"> 
+        <small>Error</small>
+    </div>
+    <div>
+        <label for="pin">contraseña:</label>
+        <input id="password" type="password" placeholder="Introduce una contraseña"> 
+        <small>Este campo no puede estar vacío</small>
+    </div>
+    <div>
+    <label for="pin2">Repite contraseña:</label> 
+    <input id="password2" type="password" placeholder="Repite la contraseña"> 
+    <small>Este campo no puede estar vacío</small>
+</div>
+    <button id="boton" type="submit">Enviar</button>
+</div>
+<input type="submit" onclick="comprobación();return false">
+<p id="resultado"></p>
+
+</form>
+<script>
+        const form = document.getElementById("form");
+        const nombre = document.getElementById("nombre");
+        const apellido = document.getElementById("apellido");
+        const telefono = document.getElementById("telefono");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const password2 = document.getElementById("password2");
+        
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            checkInputs();
+        });
+
+        function checkInputs() {
+            const nombreValue = nombre.value.trim();
+            const apellidoValue = apellido.value.trim();
+            const emailValue = email.value.trim();
+            const telefonoValue = telefono.value.trim();
+            const passwordValue = password.value.trim();
+            const password2Value = password2.value.trim();
+        
+        if (usuarioValue === '') {
+            setErrorfor(nombre,'Este campo no puede estar vacío')            
+        }
+        else{
+            setSuccessFor(nombre);
+        }
+    
+        if (emailValue === '')
+            setErrorfor(email, 'No ingreso un email valido')
+        else if (isEmail(emailValue)){
+                setErrorfor(email, "no ingresó un email valido")
+            }
+        else{
+            setSuccesfor(email);
+        }
+        if (passwordValue === ''){
+            setErrorfor(password, 'NO puede dejar el password en blanco')
+        }
+        else{
+            setSuccessFor(password)
+        }
+        if (password2Value === ''){
+            setErrorfor(password2, 'NO puede dejar el password en blanco')
+        }
+        else if
+            (password2Value !== password2Value){
+                setErrorfor(password2, 'Contraseñas no coinciden')
+            }
+        
+        else{
+            setSuccessFor(password2)
+        }
+
+
+
+    function setErrorfor(input, mensaje) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'form-control error';
+        small.innerText = mensaje;
+        }
+    }
+
+    function setSuccessFor(input) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control.success'
+    }
+
+    function isEmail(email) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/.test(valor)){
+   alert("La dirección de email " + valor + " es correcta.");
+    } 
+  else {
+   alert("La dirección de email es incorrecta.");
+  }
+    }
+
+    function comprobación() {
+    let entrada=document.getElementById("dni").value;
+    let numero=8;
+    let contador=parseInt(entrada.length);
+    let opciones="TRWAGMYFPDXBNJZSQVHLCKET";
+    let dni=entrada%23;
+    let DNIL=opciones.substring(dni,dni+1);
+    if (contador!=numero)
+{
+    document.getElementById("resultado").innerHTML = "Se ha equivocado";
+}
+else
+{
+    document.getElementById("resultado").innerHTML = "Su DNI es " + entrada + DNIL;
+}
+
+}
+
+    </script>
+</body>
+</html>

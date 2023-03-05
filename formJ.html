@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de alta</title>
+</head>
+<body>
+    <p><h4>NOMBRE: <input type="text" name="" id="nombre"></h4><div id=fnombre></div></p>
+    <p><h4>APELLIDO: <input type="text" name="" id="apellido"></h4><div id=fape></div></p>
+    <p><h4>E-MAIL: <input type="text" name="" id="correo"></h4><div id=fmail></div></p>
+    <p><h4>DIRECCIÓN: <input type="text" name="" id="dire"></h4></p>
+    <p><h4>CIUDAD: <input type="text" name="" id="ciudad"></h4></p>
+    <p><h4>TELÉFONO: <input type="text" name="" id="tlf"></h4><div id=telcom></div></p>
+    <p><h4>DNI (sin letra): <input type="text" name="" id="dni"></h4><div id=fdni></div></p>
+    <p><h4>PIN (8 dígitos): <input type="password" name="" id="pin" placeholder="00000000"></h4><div id=fpin></div></p>
+    <p><h4>PIN (Confirme): <input type="password" name="" id="pin2" placeholder="00000000"></h4><div id=fpin2></div></p>
+    <p><button onclick="comprobacion()">Enviar</button></p>
+    <h4><p id="ole"></p></h4>
+<script>
+function comprobacion(){
+var nombre = document.getElementById("nombre").value;
+var apellido = document.getElementById("apellido").value;
+var correo = document.getElementById("correo").value;
+var telefon = document.getElementById("tlf").value;
+var tlfreg= "^(\\+34|0034|34)?[6789]\\d{8}$";
+var mail = document.getElementById("fmail").value;
+var mailcom = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+var DNI = document.getElementById("dni").value;
+var numero=8;
+var contador=parseInt(DNI.length);
+var DNIc=DNI%23;
+var opciones="TRWAGMYFPDXBNJZSQVHLCKET";
+var DNIL=opciones.substring(DNIc,DNIc+1);
+var pin = document.getElementById("pin").value;
+var pin2 = document.getElementById("pin2").value;
+if(nombre=="" || nombre.length<=2){ document.getElementById("fnombre").innerHTML = "Por favor, introduzca su nombre"}else{document.getElementById("fnombre").innerHTML=""}
+if(apellido=="" || apellido.length<=2){ document.getElementById("fape").innerHTML = "Por favor, introduzca su apellido"}else{document.getElementById("fape").innerHTML=""}
+if(correo==""){document.getElementById("fmail").innerHTML = "Por favor, introduzca una dirección de correo"} else if(!mailcom.exec(correo)){document.getElementById("fmail").innerHTML = "Por favor, introduzca una dirección de correo correcta"} else{document.getElementById("fmail").innerHTML=""}
+if(contador!=numero){document.getElementById("fdni").innerHTML = "Por favor, introduzca un DNI correcto"}else{document.getElementById("fdni").innerHTML=""}
+if(telefon==""){document.getElementById("telcom").innerHTML = "Por favor, introduzca un número de teléfono"} else if(telefon.length!=9){document.getElementById("telcom").innerHTML = "Por favor, introduzca un número de teléfono correcto"} else if(isNaN(telefon)){document.getElementById("telcom").innerHTML = "Muy listo. No, no vale poner letras"} else{document.getElementById("telcom").innerHTML=""}
+if(pin.length!=8){document.getElementById("fpin").innerHTML = "Por favor, introduzca un Pin de 8 dígitos"} else if(isNaN(pin)){document.getElementById("fpin").innerHTML = "Muy listo. No, no vale poner letras"} else{document.getElementById("fpin").innerHTML=""}
+if(pin!=pin2){document.getElementById("fpin2").innerHTML = "Vuelva a comprobar que ambos Pins coinciden"}else{document.getElementById("fpin2").innerHTML=""}
+if(nombre=="" || nombre.length<=2 || apellido=="" || apellido.length<=2 || correo=="" || contador!=numero || pin.length!=8 || pin!=pin2 || !mailcom.exec(correo) || telefon=="" || telefon.length!=9 || isNaN(telefon) || isNaN(pin))
+{document.getElementById("ole").innerHTML = document.getElementById("ole").innerHTML="Sus datos tienen algún error, por favor, compruébelos de nuevo"}
+else
+{document.getElementById("ole").innerHTML="Muchas gracias por registrarse, su usuario es "+nombre.substr(0,2)+apellido.substr(0,2)+telefon.slice(-3)}
+}
+</script>
+</body>
+</html>

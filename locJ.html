@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion</title>
+</head>
+<body>
+    <p><label>CLAVE: <input type="text" name="" id="clave"></h4></label></p>
+    <p><label>VALOR: <input type="text" name="" id="valor"></h4></label></p>
+    <p><button onclick="guardar()">Guardar</button></p>
+    <p id="resultado"></p>
+    <script>
+function guardar(){
+    let clave=document.getElementById("clave").value;
+    let valor=document.getElementById("valor").value;
+    localStorage.setItem("clave", clave);
+    localStorage.setItem("valor", valor);
+
+}
+
+document.getElementById("resultado").innerHTML = 'Su clave es '+localStorage.getItem("clave")+' su valor es '+localStorage.getItem("valor");
+    </script>
+</body>
+</html>

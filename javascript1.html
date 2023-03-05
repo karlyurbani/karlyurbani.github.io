@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascrip 1</title>
+    <title>Bucle for</title>
 </head>
+    <body>
+        <h1>Adivino cuantos dedos tienes!</h1>
+          
+        <button id="adivinaBoton">¡Adivina!</button>
+        <script type="text/javascript"> 
+          document.getElementById("adivinaBoton").onclick = function()
+          {
+            var miNumero = document.getElementById("numeroDedos").value;
+            var aciertoMaquina = false; 
+            var numeroIntentos = 1;
 
-<body>
-
-<h1>Javascript en línea</h1>
-<button onclick="alert('Enhorabuena, te has ganado un viaje a París')">Picha aquí para ver el pop-up</button>
-
-</body>
-
+            while (aciertoMaquina == false)
+                {
+                    var numeroMaquina = Math.random();
+                    numeroMaquina = numeroMaquina * 6;
+                    numeroMaquina = Math.floor(numeroMaquina);
+                    if (numeroMaquina == miNumero)
+                        {
+                            aciertoMaquina = true;
+                            alert("Acerté! el numero era" +numeroMaquina+". Me ha costado"+numeroIntentos+"intentos.")
+                        }
+                        else
+                        {
+                            numeroIntentos == 
+                        }
+                }
+          }
+        </script>
+    </body>
 </html>

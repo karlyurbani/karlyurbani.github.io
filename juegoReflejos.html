@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprueba tus reflejos</title>
+
+    <style>
+        #forma 
+        {
+            width: 200px;
+            height: 200px;
+            background-color: red; 
+            position: relative;
+            top: 100px ;
+            left: 100px;
+        }
+
+        .bold
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Comprueba tus reflejos!</h1>
+    <h3>Haz click en las figuras apenas aparezcan!</h3>
+    <p>Tiempo de reacción: <span id="tiempoReaccion"></span> </p>
+    <div id="forma"></div>
+
+<script>
+    var inicio= new Date().getTime();
+    function obtenerColorAleatorio() 
+    {
+        var letters = "0123456789ABCDEF".split('');
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.round(Math.random() * 15)];
+        } 
+        return color;  
+         
+    }
+    function aparecerForma() 
+    {
+        var top=Math.random()*400;
+        var left=Math.random()*400;
+        var width=(Math.random()*200)+100;
+        if (Math.random()>0.5)
+            {
+        document.getElementById("forma").style.borderRadius ="50%";
+            }
+        else
+            {
+                document.getElementById("forma").style.borderRadius ="0%"
+            }
+        var colorAleatorio = obtenerColorAleatorio();
+        document.getElementById("forma").style.display ="block";
+        document.getElementById("forma").style.top = top + "px";
+        document.getElementById("forma").style.left = left + "px";
+        document.getElementById("forma").style.width = width + "px";
+        document.getElementById("forma").style.height = width + "px";
+        document.getElementById("forma").style.backgroundColor = obtenerColorAleatorio();
+
+        inicio = new Date().getTime();
+    }
+   
+    function aparecerFormaDespuesRetraso() 
+    {
+        setTimeout(aparecerForma, Math.random()*2000);
+    }
+    aparecerFormaDespuesRetraso();
+
+    document.getElementById("forma").onclick=function
+    ()
+    {
+        document.getElementById("forma").style.display="none"; 
+        var fin= new Date().getTime();
+        var diferencia = (fin-inicio)/1000;
+        document.getElementById("tiempoReaccion").innerHTML = diferencia + "s";
+        aparecerFormaDespuesRetraso();
+     }
+</script>
+</body>
+</html>
