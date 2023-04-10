@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segundo query</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+        
+        //Esto sirve para que jQuery espere a que se cargue todo el documento
+        $(document).ready(function(){
+            $("#mas").click(function(){
+                $("h1").css({"font-size":"200%", "color":"yellow"});
+                $("p:odd").css({"font-size":"200%", "color":"yellow"});
+            });
+            $("#menos").click(function(){
+                $("p:odd").css({"font-size":"50%", "color":"green"});
+            });
+        });
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Mi primer jQuery</h1>
+   
+    <p>Párrafo 1</p>
+   
+    <p> 1 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum 
+    ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+    (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los 
+    mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años,
+    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset",
+    las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición,
+    como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+   
+    <p>2 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum 
+    ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+    (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los 
+    mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años,
+    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset",
+    las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición,
+    como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+   
+    <p> 3 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum 
+    ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+    (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los 
+    mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años,
+    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset",
+    las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición,
+    como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+
+    <p> 4 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum 
+     ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+    (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los 
+    mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años,
+    sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+    igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset",
+    las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición,
+    como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+
+    <button id="mas">amarillo</button>
+    <button id="menos">verde</button>
+</body>
+</html>
